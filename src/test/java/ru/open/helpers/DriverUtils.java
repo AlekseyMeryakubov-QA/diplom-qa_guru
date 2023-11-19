@@ -17,17 +17,23 @@ import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class DriverUtils {
     public static final Logger LOGGER = LoggerFactory.getLogger(DriverUtils.class);
+
+
     public static String getSessionId() {
         return ((RemoteWebDriver) getWebDriver()).getSessionId().toString();
     }
+
     public static byte[] getScreenshotAsBytes() {
         return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
-    public static byte[] getPageSourceAsByte() {
+
+    public static byte[] getPageSourceAsBytes() {
         return getWebDriver().getPageSource().getBytes(StandardCharsets.UTF_8);
     }
+
     public static URL getVideoUrl(String sessionId) {
         String videoUrl = "https://selenoid.autotests.cloud/video/" + sessionId + ".mp4";
+
         try {
             return new URL(videoUrl);
         } catch (MalformedURLException e) {
@@ -36,8 +42,8 @@ public class DriverUtils {
         }
         return null;
     }
-    public static String getConsoleLogs () {
+
+    public static String getConsoleLogs() {
         return String.join("\n", Selenide.getWebDriverLogs(BROWSER));
     }
-
 }
