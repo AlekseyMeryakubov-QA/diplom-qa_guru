@@ -1,7 +1,6 @@
 package ru.open.config;
 
-import org.aeonbits.owner.Config;
-import org.openqa.selenium.devtools.v112.browser.Browser;
+//import org.openqa.selenium.devtools.v112.browser.Browser;
 
 //@Config.Sources("classpath:${host}.properties")
 //public interface WebDriverConfig extends Config{

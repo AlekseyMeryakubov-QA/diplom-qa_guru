@@ -8,16 +8,15 @@ repositories {
     mavenCentral()
 }
 
-def allureVersion = "2.19.0",
-    selenideVersion = "6.5.0",
-    appiumVersion = "8.0.0",
-    junitVersion = "5.8.2",
-    restVersion = "4.3.1",
+def allureVersion = "2.21.0",
+    selenideVersion = "6.13.0",
+    junitVersion = "5.9.2",
+    restVersion = "5.3.0",
     ownerVersion = "1.0.12",
-    assertjVersion = "3.19.0",
-    slf4jVersion = "1.7.29",
+    assertjVersion = "3.24.2",
+    slf4jVersion = "2.0.7",
     pdfVersion = "1.7.0",
-    webDriverManagerVersion = "5.2.3",
+    webDriverManagerVersion = "5.3.2",
     fakerVersion = "1.0.2",
     aspectjVersion = "1.9.6"
 
@@ -42,7 +41,6 @@ dependencies {
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "io.qameta.allure:allure-rest-assured:$allureVersion",
-            "io.appium:java-client:$appiumVersion",
             "io.rest-assured:rest-assured:$restVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
             "org.assertj:assertj-core:$assertjVersion",
