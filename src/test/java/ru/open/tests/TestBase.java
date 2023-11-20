@@ -1,6 +1,5 @@
 package ru.open.tests;
 
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.junit5.AllureJunit5;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -8,52 +7,40 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import ru.open.helpers.AllureAttachments;
-
-import java.util.Map;
+import ru.open.config.ConfigManager;
+import ru.open.config.WebConfig;
+import ru.open.config.WebConfigProject;
+import ru.open.helpers.Attach;
+import ru.open.pages.ui.MainPage;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
-import static io.restassured.RestAssured.sessionId;
 
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
+    protected MainPage mainPage = new MainPage();
 
+    private static final WebConfig config = ConfigManager.Instance.read();
 
     @BeforeAll
-    static void beforeAll() {
+    public static void beforeAll() {
+        WebConfigProject webConfigForProject = new WebConfigProject(config);
+        webConfigForProject.applyWebConfig();
 
-        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
-        Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.baseUrl = "https://open-broker.ru/invest/";
-        Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
-        Configuration.pageLoadStrategy = "eager";
-        Configuration.remote = System.getProperty("remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
-
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-                "enableVNC", true,
-                "enableVideo", true
-        ));
-        Configuration.browserCapabilities = capabilities;
     }
 
     @BeforeEach
     void addListener() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
     @AfterEach
     void addAttachments() {
-        AllureAttachments.addScreenshotAs("Last screenshot");
-        AllureAttachments.addPageSource();
-        AllureAttachments.addBrowserConsoleLogs();
-        AllureAttachments.addVideo(sessionId);
-    }
+        Attach.screenshotAs("Last screenshot");
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
+        Attach.addVideo();
 
-    @AfterEach
-    void close() {
         closeWebDriver();
     }
 }
