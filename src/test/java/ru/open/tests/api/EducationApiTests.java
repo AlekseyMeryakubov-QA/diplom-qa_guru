@@ -1,6 +1,6 @@
 package ru.open.tests.api;
 
-//
+
 //@Feature("Тесты на Странице с обучением")
 //@Epic("API тесты")
 //@Tag("API")
@@ -12,7 +12,7 @@ package ru.open.tests.api;
 //
 //    String cookieName = "api/cookie.json";
 //    String bodyJson = "api/body.json";
-//
+
 //    @Test
 //    @DisplayName("Тест на авторизацию")
 //    @Severity(SeverityLevel.NORMAL)

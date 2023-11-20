@@ -45,7 +45,7 @@ package ru.open.api;
 //                .extract()
 //                .detailedCookies();
 //    }
-//
+
 //    @Step("Добавление сохраненых Cookie в браузер")
 //    public void setCookies(Cookies cookies) {
 //        for (Cookie cookie : cookies) {
@@ -58,7 +58,7 @@ package ru.open.api;
 //    public String getCookiesByName(String name, Cookies cookies) {
 //        return cookies.getValue(name);
 //    }
-//
+
 //    @Step("Редактирование объекта JSON с изменением токена авторизации на полученный ранее")
 //    public void changeToken(AuthorisationResponseModel authorisationResponseModel, ObjectNode jsonNodeBody) {
 //        String cookie = getCookiesByName(accessToken, authorisationResponseModel.getCookies());
@@ -73,7 +73,7 @@ package ru.open.api;
 //        ObjectNode jsonNode1 = (ObjectNode) jsonNodeBody.get("payload");
 //        jsonNode1.replace("fname", newNode);
 //    }
-//
+
 //    @Step("API запрос на изменение Имени пользователя")
 //    public void customerNameApi(AuthorisationResponseModel authorisationResponseModel, ObjectNode jsonNodeBody) {
 //        given()
