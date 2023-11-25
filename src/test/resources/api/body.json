@@ -1,0 +1,20 @@
+{
+  "url":"https://api.open-broker.ru/v2/opentrainer/user/",
+  "config":
+  {
+    "headers":
+    {
+      "Content-Type": "application/json",
+      "Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjA4YTFlM2IxLWViZDctNDcwNy05NzAwLTU4NjFlNDQ2YWViYSJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLm9wZW4tYnJva2VyLnJ1XC92Mlwvb3BlbnRyYWluZXIiLCJhdWQiOiJodHRwczpcL1wvYXBpLm9wZW4tYnJva2VyLnJ1XC92Mlwvb3BlbnRyYWluZXIiLCJqdGkiOiIwOGExZTNiMS1lYmQ3LTQ3MDctOTcwMC01ODYxZTQ0NmFlYmEiLCJpYXQiOjE2NjEzMzc0NTksIm5iZiI6MTY2MTMzNzQ1OSwiZXhwIjoxNjYxMzM4NjU5LCJyZWZyZXNoX2lkIjoxNjgwOTAsInVzZXJfaWQiOjI4MDM5Mn0.ghK4ia5otrEBfgXrDtnTAz-r-zcYJau36GrGnTOw-h4"
+    },
+    "timeout":4500,
+    "method":"patch"
+  },
+  "payload":
+  {
+    "fname":"Алексей",
+    "lname":"Мерякубов",
+    "email":"Alex_meryakubov@mail.ru",
+    "gender":0
+  }
+}
