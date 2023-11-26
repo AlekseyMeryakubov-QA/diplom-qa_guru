@@ -11,6 +11,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.open.api.EducationApi;
+import ru.open.models.AuthorisationRequestModel;
 import ru.open.models.AuthorisationResponseModel;
 import ru.open.pages.ui.EducationPage;
 import ru.open.pages.ui.MainPage;
@@ -36,6 +37,8 @@ public class EducationApiTests extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     public void authorisationApiTest() throws IOException {
         AuthorisationResponseModel authorisationResponseModel = new AuthorisationResponseModel();
+        AuthorisationRequestModel authorisationRequestModel = new AuthorisationRequestModel();
+
 
         JsonNode jsonNode = educationApiPage.parseJson(cookieName);
         authorisationResponseModel.setCookies(educationApiPage.authorisationApi(jsonNode));
@@ -50,6 +53,7 @@ public class EducationApiTests extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     public void changeCustomerDataTestUI() throws IOException {
         AuthorisationResponseModel authorisationResponseModel = new AuthorisationResponseModel();
+
         JsonNode jsonNode = educationApiPage.parseJson(cookieName);
 
         authorisationResponseModel.setCookies(educationApiPage.authorisationApi(jsonNode));
