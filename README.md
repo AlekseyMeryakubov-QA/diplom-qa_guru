@@ -105,7 +105,7 @@ test
 ## <img src="images/logo/Selenoid.svg" width="25" height="25"  alt="Allure"/></a><a name="Video"> Видео прохождения теста</a>
 
 <p align="center">
-<img title="Selenoid Video" src="images/b8d6d3f36c113950.gif" width="250" height="153"  alt="video"> 
-<img title="Selenoid Video" src="images/cdbb275e1308bf2.gif" width="250" height="153"  alt="video"> 
+<img title="Selenoid Video" src="images/b8d6d3f36c113950.gif" width="350" height="153"  alt="video"> 
+<img title="Selenoid Video" src="images/cdbb275e1308bf2.gif" width="350" height="153"  alt="video"> 
 </p>
 
