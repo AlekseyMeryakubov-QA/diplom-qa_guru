@@ -16,7 +16,7 @@
 </h1>
 
 - Набор разнообразных UI тестов
-- Несколько API тестов
+
 
 
 ## <img src="images/logo/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a><a name="Jenkins"> Jenkins <a target="_blank" href="https://jenkins.autotests.cloud/job/qa_guru_21_diplom_2/"> job </a></a>
@@ -68,11 +68,6 @@ test
 <img title="Allure Overview Dashboard" src="images/Набор кейсов.PNG">
 </p>
 
-### Тест с использованием API
-
-<p align="center">
-<img title="Allure Overview Dashboard" src="images/Api.PNG">
-</p>
 
 ### Список ошибок
 
@@ -110,7 +105,6 @@ test
 ## <img src="images/logo/Selenoid.svg" width="25" height="25"  alt="Allure"/></a><a name="Video"> Видео прохождения теста</a>
 
 <p align="center">
-<img title="Selenoid Video" src="images/3a411e3c8853f2fb.gif" width="250" height="153"  alt="video">
 <img title="Selenoid Video" src="images/b8d6d3f36c113950.gif" width="250" height="153"  alt="video"> 
 <img title="Selenoid Video" src="images/cdbb275e1308bf2.gif" width="250" height="153"  alt="video"> 
 </p>
