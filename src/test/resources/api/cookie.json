@@ -1,7 +1,0 @@
-{
-  "access_token" :"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRiYzQzMWIzLTA4OTItNDNkNS04OGU3LTEyNzgzODJlNDM4MyJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLXBkby5vcGVuLWJyb2tlci5ydSIsImF1ZCI6Imh0dHBzOlwvXC9hcGktcGRvLm9wZW4tYnJva2VyLnJ1IiwianRpIjoiNGJjNDMxYjMtMDg5Mi00M2Q1LTg4ZTctMTI3ODM4MmU0MzgzIiwiaWF0IjoxNzAxMDI1MzYyLCJuYmYiOjE3MDEwMjUzNjIsImV4cCI6MTcwMTAyNjU2MiwicmVmcmVzaF9pZCI6MTk0MDk5LCJ1c2VyX2lkIjozNzE0Nzd9.b1v23u6KnB4Vukwdl9U6rH0qmHS-DrXwgv2pPveKVto;",
-  "expires_in":"2023-11-26%2022%3A22%3A42;",
-  "refresh_token":"4e897170-4c29-4476-b5c9-6fc5f3f8c81a;",
-  "refresh_token_expires_in":"2024-05-23%2022%3A40%3A02;",
-  "user_id":"371477"
-}

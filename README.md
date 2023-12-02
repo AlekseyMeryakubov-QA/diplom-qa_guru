@@ -1,4 +1,4 @@
-# Проект по автоматизации тестирования Открытие инвестиции
+# Проект по автоматизации тестирования </a><a name="Открытие">  <a target="_blank" href="https://open-broker.ru/"> Открытие инвестии </a></a>
 <a href="https://open-broker.ru/invest/"><img alt="OpenBroker" src="images/logo/Открытие.png"/></a>
 
 ## Содержание:
@@ -11,6 +11,24 @@
 - [Allure отчет](#Allure)
 - [Отчет в Telegram](#Telegram)
 - [Видео примеры прохождения тестов](#Video)
+
+<h1 align="left">
+<a name="Technology"><i>Технологии и инструменты</i></a>
+</h1>
+
+<p align="center">
+<a href="https://www.jetbrains.com/idea/"><img src="images/logo/Idea.svg" width="50" height="50"  alt="IDEA"/></a>
+<a href="https://www.java.com/"><img src="images/logo/Java.svg" width="50" height="50"  alt="Java"/></a>
+<a href="https://github.com/"><img src="images/logo/GitHub.svg" width="50" height="50"  alt="Github"/></a>
+<a href="https://junit.org/junit5/"><img src="images/logo/Junit5.svg" width="50" height="50"  alt="JUnit 5"/></a>
+<a href="https://gradle.org/"><img src="images/logo/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>
+<a href="https://selenide.org/"><img src="images/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>
+<a href="https://aerokube.com/selenoid/"><img src="images/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
+<a href="https://github.com/allure-framework/allure2"><img src="images/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a>
+<a href="https://qameta.io/"><img src="images/logo/AllureTestOps.png" width="50" height="50"  alt="Jenkins"/></a>
+<a href="https://rest-assured.io/"><img src="images/logo/Rest-Assured.png" width="50" height="50"  alt="Jenkins"/></a>
+
+
 <h1 align="left">
 <a name="Checks"><i>Реализованные проверки</i></a>
 </h1>

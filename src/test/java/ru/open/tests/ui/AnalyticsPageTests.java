@@ -36,9 +36,9 @@ public class AnalyticsPageTests extends TestBase {
         analyticsPage.openAnalyticsPage();
         analyticsPage.openNewslinePage();
         analyticsPage.openCalendar();
-        analyticsPage.setValue("октябрь 2023", "1", "31");
+        analyticsPage.setValue("ноябрь 2023", "1", "30");
         analyticsPage.submitCalendar();
-        analyticsPage.checkDateNews("октября", "31");
+        analyticsPage.checkDateNews("ноября", "30");
     }
 
     @Test
@@ -49,7 +49,7 @@ public class AnalyticsPageTests extends TestBase {
         analyticsPage.openAnalyticsPage();
         analyticsPage.openDividentCalendar();
         analyticsPage.clickOnDividents();
-        analyticsPage.checkFirstPaper("ТрансКонтейнер");
+        analyticsPage.checkFirstPaper("Морион");
     }
 
     @Test
@@ -59,8 +59,8 @@ public class AnalyticsPageTests extends TestBase {
         mainPage.openMainPage();
         analyticsPage.openAnalyticsPage();
         analyticsPage.openDividentCalendar();
-        analyticsPage.searchPaper("Мегафон");
-        analyticsPage.checkFirstPaper("Мегафон");
+        analyticsPage.searchPaper("Лукойл");
+        analyticsPage.checkFirstPaper("ЛУКОЙЛ");
     }
 
     @Test

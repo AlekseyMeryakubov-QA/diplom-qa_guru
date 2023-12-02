@@ -13,46 +13,46 @@ import ru.open.pages.ui.MainPage;
 import ru.open.pages.ui.TariffPage;
 import ru.open.tests.TestBase;
 
-    @Feature("Тесты на странице Тарифов")
-    @Epic("UI тесты")
-    @Tag("WEB")
-    @Tag("ALL")
-    public class TariffPageTests extends TestBase {
-        MainPage mainPage = new MainPage();
-        TariffPage tariffPage = new TariffPage();
+@Feature("Тесты на странице Тарифов")
+@Epic("UI тесты")
+@Tag("WEB")
+@Tag("ALL")
+public class TariffPageTests extends TestBase {
+    MainPage mainPage = new MainPage();
+    TariffPage tariffPage = new TariffPage();
 
-        @Test
-        @DisplayName("Простой тест на проверку ссылки на страницу с Тарифами")
-        @Severity(SeverityLevel.MINOR)
-        void testHeaderLinksTariff() {
-            mainPage.openMainPage();
-            tariffPage.openTariffPage();
-            tariffPage.checkTariffPage();
-        }
-
-        @Test
-        @DisplayName("Проверка количества тарифов")
-        @Severity(SeverityLevel.MINOR)
-        void testTariffLists() {
-            mainPage.openMainPage();
-            tariffPage.openTariffPage();
-            tariffPage.checkTariffLists();
-        }
-
-        @DisplayName("Проверка содержимого тарифов")
-        @Severity(SeverityLevel.NORMAL)
-        @ValueSource(strings = {
-                "Всё включено",
-                "Инвестиционный",
-                "Премиальный",
-                "Спекулятивный"
-        })
-        @ParameterizedTest()
-        void testTariffContent(String testData) {
-            mainPage.openMainPage();
-            tariffPage.openTariffPage();
-            tariffPage.checkTariffContent(testData);
-        }
+    @Test
+    @DisplayName("Простой тест на проверку ссылки на страницу с Тарифами")
+    @Severity(SeverityLevel.MINOR)
+    void testHeaderLinksTariff() {
+        mainPage.openMainPage();
+        tariffPage.openTariffPage();
+        tariffPage.checkTariffPage();
     }
+
+    @Test
+    @DisplayName("Проверка количества тарифов")
+    @Severity(SeverityLevel.MINOR)
+    void testTariffLists() {
+        mainPage.openMainPage();
+        tariffPage.openTariffPage();
+        tariffPage.checkTariffLists();
+    }
+
+    @DisplayName("Проверка содержимого тарифов")
+    @Severity(SeverityLevel.NORMAL)
+    @ValueSource(strings = {
+            "Всё включено",
+            "Инвестиционный",
+            "Премиальный",
+            "Спекулятивный"
+    })
+    @ParameterizedTest()
+    void testTariffContent(String testData) {
+        mainPage.openMainPage();
+        tariffPage.openTariffPage();
+        tariffPage.checkTariffContent(testData);
+    }
+}
 
 

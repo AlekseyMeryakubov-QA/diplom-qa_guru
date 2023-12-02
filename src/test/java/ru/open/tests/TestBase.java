@@ -11,14 +11,13 @@ import ru.open.config.ConfigManager;
 import ru.open.config.WebConfig;
 import ru.open.config.WebConfigProject;
 import ru.open.helpers.Attach;
-import ru.open.pages.ui.MainPage;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 
 @ExtendWith({AllureJunit5.class})
 public class TestBase {
-    protected MainPage mainPage = new MainPage();
+
 
     private static final WebConfig config = ConfigManager.Instance.read();
 
